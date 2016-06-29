@@ -5,5 +5,6 @@ export class Container
     
     sayHello() {
         console.log("Hello world now");
+        return true;
     }
 }

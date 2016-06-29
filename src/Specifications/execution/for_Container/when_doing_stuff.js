@@ -1,13 +1,13 @@
-import {Container} from "../../../Source/execution/Container";
+import {Container} from "/Source/execution/Container";
 
 describe("when doing stuff", () => {
    var container = new Container();
    
-   container.sayHello();
+   var result = container.sayHello();
    
    console.log("FGromfasd");
       
    it("should do stuff", () => {
-       expect(true).toBe(true);
+       expect(result).toBe(true);
    });
 });
