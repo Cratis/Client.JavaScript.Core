@@ -1,15 +1,18 @@
 import {Exception} from "../../Source/Exception";
 
+const message = "My Exception";
+
 class MyException extends Exception
 {
     static get message() {
-        return "MyException";
+        return message;
     }
 }
 
-describe("when throwing without message parameters", () => {
+describe("when throwing exception without message parameters", () => {
+    let result = null;
 
+    try { MyException.throw(); } catch(e) { result = e }
 
-    MyException.throw();
-
+    it("should have the expected message", () => result.should.equal(message));
 });
