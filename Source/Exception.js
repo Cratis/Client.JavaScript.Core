@@ -1,7 +1,7 @@
 export class Exception
 {
     static get message() {
-        return "";
+        return "Something went wrong";
     }
 
     static throw(messageParameters) {
