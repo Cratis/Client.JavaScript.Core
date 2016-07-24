@@ -9,5 +9,6 @@ describe("when throwing exception without message parameters", () => {
 
     try { MyException.throw(); } catch(e) { result = e }
 
-    it("should have the base types message", () => result.should.equal(Exception.message));
+    it("should be of the specific exception type", () => result.should.be.instanceof(MyException));
+    it("should have an empty message", () => result.message.should.equal(""));
 });

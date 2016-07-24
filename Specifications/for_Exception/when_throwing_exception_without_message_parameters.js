@@ -4,8 +4,8 @@ const message = "My Exception";
 
 class MyException extends Exception
 {
-    static get message() {
-        return message;
+    constructor() {
+        super(message);
     }
 }
 
@@ -14,5 +14,6 @@ describe("when throwing exception without message parameters", () => {
 
     try { MyException.throw(); } catch(e) { result = e }
 
-    it("should have the expected message", () => result.should.equal(message));
+    it("should be of the specific exception type", () => result.should.be.instanceof(MyException));
+    it("should have the expected message", () => result.message.should.equal(message));
 });
