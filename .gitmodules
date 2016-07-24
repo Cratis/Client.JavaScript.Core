@@ -1,3 +1,3 @@
-[submodule "Modules/Client.JavaScript.Setup"]
-	path = Modules/Client.JavaScript.Setup
-	url = https://github.com/Cratis/Client.JavaScript.Setup.git
+[submodule "Modules/JavaScript.Pipeline"]
+	path = Modules/JavaScript.Pipeline
+	url = https://github.com/Cratis/JavaScript.Pipeline.git
