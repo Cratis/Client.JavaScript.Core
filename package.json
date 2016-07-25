@@ -3,7 +3,7 @@
   "description": "Core Client for JavaScript",
   "version": "1.0.0",
   "registry": "npm",
-  "main": "cratis.client.javascript.core.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
