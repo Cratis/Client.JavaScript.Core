@@ -2,6 +2,7 @@ SystemJS.config({
     defaultJSExtensions: true,
     paths: {
         "github:": "jspm_packages/github/",
+        "cratis.client.javascript.core/*": "Distribution/*",
         "npm:": "jspm_packages/npm/"
     },
     browserConfig: {
